@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>parser</title>
+        <link rel="stylesheet" href="../lib/jasmine.css">
+        <script type="text/javascript" src="../lib/jasmine.js"></script>
+        <script type="text/javascript" src="../lib/jasmine-html.js"></script>
+        <script type="text/javascript" src="../lib/boot.js"></script>
+        <script type="text/javascript" src="../spec/words_counter_spec.js"></script>
+        <script type="text/javascript">
+            function wordsCounter(text ){
+                var prev_char_is_letter = false;
+                var word_count = 0;
+                for (var i = 0; i < text.length; i++){
+                    if (text[i] != ' ' && !prev_char_is_letter){
+                        prev_char_is_letter = true;
+                        word_count += 1;
+                    }else if (text[i] == ' '){
+                        prev_char_is_letter = false
+                    }else {
+                        prev_char_is_letter = true
+                    }
+                }
+                return document.getElementById('wordcount').value = word_count;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form>
+                <textarea id="inputString" cols="50" rows="4" placeholder="Введите текст"></textarea>
+                <br>
+                <input type="button" name="Convert" value="Посчитать" onClick="wordsCountert();">
+                <input id="wordcount" type="text" value="">
+            </form>
+        </div>
+    </body>
+</html>
