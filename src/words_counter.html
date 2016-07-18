@@ -9,21 +9,21 @@
         <script type="text/javascript" src="../lib/boot.js"></script>
         <script type="text/javascript" src="../spec/words_counter_spec.js"></script>
         <script type="text/javascript">
-            function wordsCounter(text ){
-                var prev_char_is_letter = false;
-                var word_count = 0;
-                for (var i = 0; i < text.length; i++){
-                    if (text[i] != ' ' && !prev_char_is_letter){
-                        prev_char_is_letter = true;
-                        word_count += 1;
-                    }else if (text[i] == ' '){
-                        prev_char_is_letter = false
-                    }else {
-                        prev_char_is_letter = true
-                    }
-                }
-                return document.getElementById('wordcount').value = word_count;
+          function wordsCounter(text) {
+            var prev_char_is_letter = false;
+            var word_count = 0;
+            for (var i = 0; i < text.length; i++) {
+              if (text[i] != ' ' && !prev_char_is_letter) {
+                prev_char_is_letter = true;
+                word_count += 1;
+              } else if (text[i] == ' ') {
+                prev_char_is_letter = false
+              } else {
+                prev_char_is_letter = true
+              }
             }
+            return document.getElementById('wordcount').value = word_count;
+          }
         </script>
     </head>
     <body>
