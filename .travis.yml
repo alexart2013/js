@@ -6,4 +6,4 @@ before_script:
 script:
   - npm install -g npm-exec
   - npm install -g jasmine-node
-  - npm install -g jasmine-node-exec
+  - jasmine-node lib/
