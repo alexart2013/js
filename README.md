@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/alexart2013/ruby.svg?branch=master)](https://travis-ci.org/alexart2013/ruby)
+[![Build Status](https://travis-ci.org/alexart2013/js.svg?branch=master)](https://travis-ci.org/alexart2013/js)
