@@ -6,4 +6,4 @@ before_script:
 script:
   - npm install -g npm-exec
   - npm install -g jasmine-node
-  - jasmine-node lib/
+  - jasmine-node words_counter_spec.js
